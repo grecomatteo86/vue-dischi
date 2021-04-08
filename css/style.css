@@ -11,6 +11,9 @@ body{
   height: 100vh;
   background-color: rgb(16, 22, 113);
 }
+.wrapper{
+  height: 100%;
+}
 /* /generals */
 /* header */
 .header_section{

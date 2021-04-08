@@ -1,5 +1,113 @@
+/* reset */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* /reset */
+/* generals */
+body{
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background-color: rgb(16, 22, 113);
+}
+/* /generals */
+/* header */
+.header_section{
+  height: 10%;
+  background-color: rgb(66, 151, 46);
+  display: flex;
+}
+.logo_section{
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_section .fa-napster{
+  font-size: 50px;
+}
+.title_header_section{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_title{
+  font-weight: 900;
+  font-style: italic;
+  font-size: 55px;
+}
+/* /header */
+/* main */
+.main_section{
+  width: 100%;
+  height: calc(100vh - 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cd_container{
+  background-color: #fff;
+  width: 15%;
+  padding: 15px;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(66, 151, 46);
+}
+.poster_container,
+.title_cd_container,
+.author_container,
+.genre_container,
+.year_container{
+  height: 100%;
+  width: 100%;
+}
+.poster_container img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.title_cd_container,
+.author_container,
+.genre_container,
+.year_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second_title{
+  font-size: 17px;
+}
+.third_title{
+  font-size: 15px;
+}
+.genre{
+  font-size: 13px;
+}
+.year{
+  font-size: 11px;
+}
+.pdd_btm{
+  padding-bottom: 5px;
+}
+/* /main */
+/* footer */
+.footer_section{
+  height: 6%;
+  background-color: rgb(66, 151, 46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pirate_title{
+  font-style: italic;
+}
+.fa-skull{
+  margin: 0 15px;
+  font-size: 13px;
+}
+/* /footer */

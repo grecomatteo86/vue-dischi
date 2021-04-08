@@ -39,7 +39,7 @@ body{
 }
 .title_header_section{
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +48,13 @@ body{
   font-weight: 900;
   font-style: italic;
   font-size: 55px;
+}
+.select_container{
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* /header */
 /* main */

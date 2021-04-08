@@ -14,6 +14,12 @@ body{
 .wrapper{
   height: 100%;
 }
+.second_title {
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+  overflow: hidden;
+}
 /* /generals */
 /* header */
 .header_section{
@@ -56,17 +62,21 @@ body{
 .cd_container{
   background-color: #fff;
   width: 15%;
+  height: 45%;
   padding: 15px;
   margin: 0 15px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgb(66, 151, 46);
 }
-.poster_container,
+.poster_container{
+  height: 60%;
+  width: 100%;
+}
 .title_cd_container,
 .author_container,
 .genre_container,
 .year_container{
-  height: 100%;
+  height: 10%;
   width: 100%;
 }
 .poster_container img{
@@ -83,7 +93,7 @@ body{
   align-items: center;
 }
 .second_title{
-  font-size: 17px;
+  font-size: 18px;
 }
 .third_title{
   font-size: 15px;
@@ -95,7 +105,7 @@ body{
   font-size: 11px;
 }
 .pdd_btm{
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 /* /main */
 /* footer */

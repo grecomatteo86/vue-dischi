@@ -11,12 +11,17 @@ var app = new Vue (
       .then((response) => {
         this.albums = response.data.response;
 
+        
+
         this.albums.forEach((item) => {
           // console.log(item.genre);
           if (!this.genres.includes(item.genre)) {
             this.genres.push(item.genre);
+
           }
+
         });
+
         console.log(this.genres);
       });
     }

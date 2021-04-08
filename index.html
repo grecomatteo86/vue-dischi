@@ -35,15 +35,15 @@
       <div class="select_container">
         <select v-model="selected" class="" name="">
           <option disabled value="">Select Genre:</option>
-          <option value="99">All</option>
-          <option v-for="(item,index) in genres" v-bind:value="index">{{item}}</option>
+          <option value="all">All</option>
+          <option v-for="(item,index) in genres" :value="item">{{item}}</option>
         </select>
       </div>
     </header>
     <!-- /header -->
     <!-- main -->
     <main class="main_section">
-      <div v-for="(item,index) in albums" class="cd_container">
+      <div v-for="(item,index) in albums" class="cd_container" v-show="item.genre == selected || selected == 'all' ">
         <!-- poster -->
         <div class="poster_container pdd_btm">
           <img :src="item.poster" :alt="`${item.title}_poster`">

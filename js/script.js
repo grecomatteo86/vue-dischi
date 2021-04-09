@@ -20,8 +20,6 @@ var app = new Vue (
         });
         //ordino gli albums secondo lo year
         this.albums.sort((a,b) => (a.year > b.year) ? 1 : -1);
-
-        console.log(this.genres);
       });
     }
   }

@@ -14,17 +14,12 @@
   <!-- axios_cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
   <!-- /axios_cdn -->
-  <!-- vue_dev_version -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <!-- /vue_dev_version -->
-  <!-- stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- /stylesheet -->
   <title>Vue Dischi Musicali</title>
 </head>
 <body>
   <div id="app" class="wrapper">
-    <!-- header -->
     <header class="header_section">
       <div class="logo_section">
         <i class="fab fa-napster"></i>
@@ -39,47 +34,30 @@
         </select>
       </div>
     </header>
-    <!-- /header -->
-    <!-- main -->
     <main class="main_section">
       <div v-for="(item,index) in albums" class="cd_container" v-if="item.genre == selected || selected == '' ">
-        <!-- poster -->
         <div class="poster_container pdd_btm">
           <img :src="item.poster" :alt="`${item.title}_poster`">
         </div>
-        <!-- /poster -->
-        <!-- title -->
         <div class="title_cd_container pdd_btm">
           <h2 class="second_title">{{item.title}}</h2>
         </div>
-        <!-- /title -->
-        <!-- author -->
         <div class="author_container pdd_btm">
           <h3 class="third_title">{{item.author}}</h3>
         </div>
-        <!-- /author -->
-        <!-- genre -->
         <div class="genre_container pdd_btm">
           <h4 class="genre">{{item.genre}}</h4>
         </div>
-        <!-- /genre -->
-        <!-- year -->
         <div class="year_container">
           <h4 class="year">{{item.year}}</h4>
         </div>
-        <!-- /year -->
       </div>
     </main>
-    <!-- /main -->
-    <!-- footer -->
     <footer class="footer_section">
       <p class="pirate_title"><small>the first pirate experience</small></p>
       <i class="fas fa-skull"></i>
     </footer>
-    <!-- /footer -->
   </div>
-  <!-- script.js -->
   <script src="js/script.js" charset="utf-8"></script>
-  <!-- /script.js -->
 </body>
 </html>
